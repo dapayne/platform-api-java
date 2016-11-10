@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.granicus.api</groupId>
   <artifactId>platform-api-java</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1-RELEASE</version>
   <name>platform-api-java</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -19,8 +19,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source/>
-          <target/>
+          <source />
+          <target />
         </configuration>
       </plugin>
 		<plugin>
@@ -56,7 +56,7 @@
 	    <url>https://github.com/dapayne/platform-api-java</url>
     	<connection>scm:git:git://github.com/dapayne/platform-api-java</connection>
     	<developerConnection>scm:git:https://github.com/dapayne/platform-api-java</developerConnection>
-    	<tag>HEAD</tag>
+    	<tag>M2RELEASE-TAG-NaN</tag>
 	</scm>      
   
 </project>
