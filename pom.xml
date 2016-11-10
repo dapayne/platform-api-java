@@ -30,7 +30,13 @@
 		</plugin>      
     </plugins>
   </build>
-  
+  <dependencies>
+	<dependency>
+	    <groupId>org.apache.axis</groupId>
+	    <artifactId>axis</artifactId>
+	    <version>1.4</version>
+	</dependency> 
+  </dependencies>
     <distributionManagement>
     	<repository>
     		<id>MACDeploy</id>
