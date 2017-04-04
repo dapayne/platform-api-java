@@ -17,7 +17,7 @@ import org.apache.axis.transport.http.*;
  */
 public class PlatformClient extends UserSDKBindingStub {
 
-    // The WSDD service name defaults to the port name.
+    // The WSDD service name defaults to the port name. 
     private String SessionCookieKey = "PHPSESSID";
 
     public PlatformClient(String site) throws AxisFault, MalformedURLException
