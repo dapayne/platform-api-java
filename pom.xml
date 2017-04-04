@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.granicus.api</groupId>
   <artifactId>platform-api-java</artifactId>
-  <version>0.0.5</version>
+  <version>0.0.6-SNAPSHOT</version>
   <name>platform-api-java</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -61,7 +61,7 @@
 	    <url>https://github.com/dapayne/platform-api-java</url>
     	<connection>scm:git:git://github.com/dapayne/platform-api-java</connection>
     	<developerConnection>scm:git:https://github.com/dapayne/platform-api-java</developerConnection>
-    <tag>platform-api-java-0.0.5</tag>
+    <tag>HEAD</tag>
   </scm>      
   
 </project>
