@@ -3,6 +3,40 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://granicus.com/xsd">
 <complexType name="EventData">
 <all>
+<<<<<<< HEAD
+<element name="ID" type="xsd:int" />
+<element name="UID" type="xsd:string" />
+<element name="ForeignID" type="xsd:int" />
+<element name="Name" type="xsd:string" />
+<element name="Description" type="xsd:string" />
+<element name="CameraID" type="xsd:int" />
+<element name="FolderID" type="xsd:int" />
+<element name="Status" type="xsd:string" />
+<element name="AgendaType" type="xsd:string" />
+<element name="AgendaFile" type="xsd:string" />
+<element name="PlayerTemplateID" type="xsd:int" />
+<element name="ArchiveStatus" type="xsd:string" />
+<element name="Duration" type="xsd:int" />
+<element name="Broadcast" type="xsd:boolean" />
+<element name="Record" type="xsd:boolean" />
+<element name="AutoStart" type="xsd:boolean" />
+<element name="StartTime" type="xsd:dateTime" />
+<element name="LastModified" type="xsd:dateTime" />
+<element name="Attendees" type="ns5:AttendeeCollection" />
+<element name="MotionTypes" type="ns5:StringCollection" />
+<element name="Street1" type="xsd:string" />
+<element name="Street2" type="xsd:string" />
+<element name="City" type="xsd:string" />
+<element name="State" type="xsd:string" />
+<element name="Zip" type="xsd:string" />
+<element name="AgendaTitle" type="xsd:string" />
+<element name="MeetingTime" type="xsd:dateTime" />
+<element name="AgendaPostedDate" type="xsd:dateTime" />
+<element name="NextStartDate" type="xsd:dateTime" />
+<element name="AgendaRolloverID" type="xsd:int" />
+<element name="ConsentAgenda" type="xsd:int" />
+<element name="Views" type="ns5:IntegerCollection" />
+=======
 <element name="ID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="UID" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="ForeignID" type="xsd:int" nillable="true" minOccurs="0" />
@@ -33,6 +67,7 @@
 <element name="NextStartDate" type="xsd:dateTime" nillable="true" minOccurs="0" />
 <element name="AgendaRolloverID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="ConsentAgenda" type="xsd:int" nillable="true" minOccurs="0" />
+>>>>>>> 97d7dc2... updates for summer release
 </all>
 </complexType>
 <complexType name="FolderData">
@@ -94,6 +129,19 @@
 </complexType>
 <complexType name="UserData">
 <all>
+<<<<<<< HEAD
+<element name="ID" type="xsd:int" />
+<element name="UID" type="xsd:string" />
+<element name="Username" type="xsd:string" />
+<element name="Password" type="xsd:string" />
+<element name="FirstName" type="xsd:string" />
+<element name="LastName" type="xsd:string" />
+<element name="MiddleName" type="xsd:string" />
+<element name="Phone" type="xsd:string" />
+<element name="Email" type="xsd:string" />
+<element name="CreatedDate" type="xsd:dateTime" />
+<element name="LastModified" type="xsd:dateTime" />
+=======
 <element name="ID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="Username" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="Password" type="xsd:string" nillable="true" minOccurs="0" />
@@ -101,14 +149,24 @@
 <element name="Email" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="CreatedDate" type="xsd:dateTime" nillable="true" minOccurs="0" />
 <element name="LastModified" type="xsd:dateTime" nillable="true" minOccurs="0" />
+>>>>>>> 97d7dc2... updates for summer release
 </all>
 </complexType>
 <complexType name="GroupData">
 <all>
+<<<<<<< HEAD
+<element name="ID" type="xsd:int" />
+<element name="UID" type="xsd:string" />
+<element name="Name" type="xsd:string" />
+<element name="Description" type="xsd:string" />
+<element name="CreatedDate" type="xsd:dateTime" />
+<element name="LastModified" type="xsd:dateTime" />
+=======
 <element name="ID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="Name" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="Description" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="CreatedDate" type="xsd:dateTime" nillable="true" minOccurs="0" />
+>>>>>>> 97d7dc2... updates for summer release
 </all>
 </complexType>
 <complexType name="TemplateData">
@@ -148,6 +206,22 @@
 </complexType>
 <complexType name="MetaDataData">
 <all>
+<<<<<<< HEAD
+<element name="ID" type="xsd:int" />
+<element name="UID" type="xsd:string" />
+<element name="ParentID" type="xsd:int" />
+<element name="ParentUID" type="xsd:string" />
+<element name="ForeignID" type="xsd:int" />
+<element name="SourceID" type="xsd:int" />
+<element name="Name" type="xsd:string" />
+<element name="TimeStamp" type="xsd:int" />
+<element name="OrderID" type="xsd:int" />
+<element name="Payload" type="xsd:anyType" />
+<element name="Consent" type="xsd:int" />
+<element name="ConsentVoteUID" type="xsd:string" />
+<element name="ClosedSession" type="xsd:int" />
+<element name="Children" type="ns5:MetaDataDataCollection" />
+=======
 <element name="ID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="UID" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="ParentID" type="xsd:int" nillable="true" minOccurs="0" />
@@ -161,6 +235,7 @@
 <element name="Consent" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="ConsentVoteUID" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="Children" type="ns5:MetaDataDataCollection" nillable="true" minOccurs="0" />
+>>>>>>> 97d7dc2... updates for summer release
 </all>
 </complexType>
 <complexType name="CaptionData">
@@ -203,8 +278,8 @@
 </complexType>
 <complexType name="AgendaItem">
 <all>
-<element name="Department" type="xsd:string" nillable="true" minOccurs="0" />
-<element name="Actions" type="xsd:string" nillable="true" minOccurs="0" />
+<element name="Department" type="xsd:string" />
+<element name="Actions" type="xsd:string" />
 </all>
 </complexType>
 <complexType name="PracticeQuestion">
@@ -266,12 +341,21 @@
 </complexType>
 <complexType name="Attendee">
 <all>
+<<<<<<< HEAD
+<element name="ID" type="xsd:int" />
+<element name="Name" type="xsd:string" />
+<element name="OrderID" type="xsd:int" />
+<element name="Voting" type="xsd:boolean" />
+<element name="Chair" type="xsd:boolean" />
+<element name="PersonUID" type="xsd:string" />
+=======
 <element name="ID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="Name" type="xsd:string" nillable="true" minOccurs="0" />
 <element name="OrderID" type="xsd:int" nillable="true" minOccurs="0" />
 <element name="Voting" type="xsd:boolean" nillable="true" minOccurs="0" />
 <element name="Chair" type="xsd:boolean" nillable="true" minOccurs="0" />
 <element name="PersonUID" type="xsd:string" nillable="true" minOccurs="0" />
+>>>>>>> 97d7dc2... updates for summer release
 </all>
 </complexType>
 <complexType name="Setting">
@@ -406,6 +490,24 @@
 </restriction>
 </complexContent>
 </complexType>
+<complexType name="PublishClipResult">
+<all>
+<element name="ClipID" type="xsd:int" />
+<element name="URL" type="xsd:string" />
+<element name="PublishPoint" type="xsd:string" />
+</all>
+</complexType>
+<complexType name="PublishClipData">
+<all>
+<element name="ClipID" type="xsd:int" />
+<element name="Public" type="xsd:boolean" />
+<element name="Name" type="xsd:string" />
+<element name="Title" type="xsd:string" />
+<element name="TextField" type="xsd:string" />
+<element name="TemplateID" type="xsd:int" />
+<element name="MetaID" type="xsd:int" />
+</all>
+</complexType>
 </schema>
 </types>
 <message name="LogMessageRequest">
@@ -476,11 +578,11 @@
 <part name="events" type="ns5:EventCollection" />
 </message>
 <message name="GetEventsByDateRangeRequest">
-<part name="StartDate" type="xsd:dateTime"/>
-<part name="EndDate" type="xsd:dateTime"/>
+<part name="StartDate" type="xsd:dateTime" />
+<part name="EndDate" type="xsd:dateTime" />
 </message>
 <message name="GetEventsByDateRangeResponse">
-<part name="events" type="ns5:EventCollection"/>
+<part name="events" type="ns5:EventCollection" />
 </message>
 <message name="GetEventsByForeignIDRequest">
 <part name="ForeignID" type="xsd:int" />
@@ -623,6 +725,12 @@
 </message>
 <message name="GetClipResponse">
 <part name="clip" type="ns5:ClipData" />
+</message>
+<message name="PublishClipRequest">
+<part name="PublishClipData" type="ns5:PublishClipData" />
+</message>
+<message name="PublishClipResponse">
+<part name="PublishClipResult" type="ns5:PublishClipResult" />
 </message>
 <message name="GetClipByUIDRequest">
 <part name="ClipUID" type="xsd:string" />
@@ -784,12 +892,21 @@
 <part name="UserData" type="ns5:UserData" />
 </message>
 <message name="CreateUserResponse">
-<part name="UserID" type="xsd:int" />
+<part name="UserUID" type="xsd:string" />
 </message>
 <message name="GetCurrentUserIDRequest" />
 <message name="GetCurrentUserIDResponse">
 <part name="UserID" type="xsd:int" />
 </message>
+<message name="GetCurrentUserUIDRequest" />
+<message name="GetCurrentUserUIDResponse">
+<part name="UserUID" type="xsd:string" />
+</message>
+<message name="SetUserMembershipsRequest">
+<part name="UserUID" type="xsd:string" />
+<part name="GroupUIDs" type="ns5:StringCollection" />
+</message>
+<message name="SetUserMembershipsResponse" />
 <message name="GetCurrentUserLogonRequest" />
 <message name="GetCurrentUserLogonResponse">
 <part name="Logon" type="xsd:string" />
@@ -799,7 +916,7 @@
 <part name="users" type="ns5:UserCollection" />
 </message>
 <message name="GetUserRequest">
-<part name="UserID" type="xsd:int" />
+<part name="UserUID" type="xsd:string" />
 </message>
 <message name="GetUserResponse">
 <part name="user" type="ns5:UserData" />
@@ -808,18 +925,22 @@
 <part name="user" type="ns5:UserData" />
 </message>
 <message name="UpdateUserResponse" />
+<message name="DeleteUserRequest">
+<part name="UserUID" type="xsd:string" />
+</message>
+<message name="DeleteUserResponse" />
 <message name="CreateGroupRequest">
 <part name="GroupData" type="ns5:GroupData" />
 </message>
 <message name="CreateGroupResponse">
-<part name="GroupID" type="xsd:int" />
+<part name="GroupUID" type="xsd:string" />
 </message>
 <message name="GetGroupsRequest" />
 <message name="GetGroupsResponse">
 <part name="groups" type="ns5:GroupCollection" />
 </message>
 <message name="GetGroupRequest">
-<part name="GroupID" type="xsd:int" />
+<part name="GroupUID" type="xsd:string" />
 </message>
 <message name="GetGroupResponse">
 <part name="group" type="ns5:GroupData" />
@@ -961,8 +1082,8 @@
 <output message="tns:GetEventsResponse" />
 </operation>
 <operation name="GetEventsByDateRange">
-<input message="tns:GetEventsByDateRangeRequest"/>
-<output message="tns:GetEventsByDateRangeResponse"/>
+<input message="tns:GetEventsByDateRangeRequest" />
+<output message="tns:GetEventsByDateRangeResponse" />
 </operation>
 <operation name="GetEventsByForeignID">
 <input message="tns:GetEventsByForeignIDRequest" />
@@ -1063,6 +1184,10 @@
 <operation name="GetClip">
 <input message="tns:GetClipRequest" />
 <output message="tns:GetClipResponse" />
+</operation>
+<operation name="PublishClip">
+<input message="tns:PublishClipRequest" />
+<output message="tns:PublishClipResponse" />
 </operation>
 <operation name="GetClipByUID">
 <input message="tns:GetClipByUIDRequest" />
@@ -1184,6 +1309,14 @@
 <input message="tns:GetCurrentUserIDRequest" />
 <output message="tns:GetCurrentUserIDResponse" />
 </operation>
+<operation name="GetCurrentUserUID">
+<input message="tns:GetCurrentUserUIDRequest" />
+<output message="tns:GetCurrentUserUIDResponse" />
+</operation>
+<operation name="SetUserMemberships">
+<input message="tns:SetUserMembershipsRequest" />
+<output message="tns:SetUserMembershipsResponse" />
+</operation>
 <operation name="GetCurrentUserLogon">
 <input message="tns:GetCurrentUserLogonRequest" />
 <output message="tns:GetCurrentUserLogonResponse" />
@@ -1199,6 +1332,10 @@
 <operation name="UpdateUser">
 <input message="tns:UpdateUserRequest" />
 <output message="tns:UpdateUserResponse" />
+</operation>
+<operation name="DeleteUser">
+<input message="tns:DeleteUserRequest" />
+<output message="tns:DeleteUserResponse" />
 </operation>
 <operation name="CreateGroup">
 <input message="tns:CreateGroupRequest" />
@@ -1401,12 +1538,12 @@
 </output>
 </operation>
 <operation name="GetEventsByDateRange">
-<soap:operation soapAction="urn:UserSDK#UserWebservice#GetEventsByDateRange"/>
+<soap:operation soapAction="urn:UserSDK#UserWebservice#GetEventsByDateRange" />
 <input>
-<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 </input>
 <output>
-<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 </output>
 </operation>
 <operation name="GetEventsByForeignID">
@@ -1627,6 +1764,15 @@
 </operation>
 <operation name="GetClip">
 <soap:operation soapAction="urn:UserSDK#UserWebservice#GetClip" />
+<input>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="PublishClip">
+<soap:operation soapAction="urn:UserSDK#UserWebservice#PublishClip" />
 <input>
 <soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 </input>
@@ -1904,6 +2050,24 @@
 <soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 </output>
 </operation>
+<operation name="GetCurrentUserUID">
+<soap:operation soapAction="urn:UserSDK#UserWebservice#GetCurrentUserUID" />
+<input>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="SetUserMemberships">
+<soap:operation soapAction="urn:UserSDK#UserWebservice#SetUserMemberships" />
+<input>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
 <operation name="GetCurrentUserLogon">
 <soap:operation soapAction="urn:UserSDK#UserWebservice#GetCurrentUserLogon" />
 <input>
@@ -1933,6 +2097,15 @@
 </operation>
 <operation name="UpdateUser">
 <soap:operation soapAction="urn:UserSDK#UserWebservice#UpdateUser" />
+<input>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="DeleteUser">
+<soap:operation soapAction="urn:UserSDK#UserWebservice#DeleteUser" />
 <input>
 <soap:body use="encoded" namespace="urn:UserSDK" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
 </input>
@@ -2124,7 +2297,11 @@
 <service name="UserSDKService">
 <documentation />
 <port name="UserSDKPort" binding="tns:UserSDKBinding">
+<<<<<<< HEAD
+<soap:address location="http://green.qa.granicus.com/SDK/user/index.php" />
+=======
 <soap:address location="http://gainesville.qa.granicus.com/SDK/user/index.php" />
+>>>>>>> 97d7dc2... updates for summer release
 </port>
 </service>
 </definitions>

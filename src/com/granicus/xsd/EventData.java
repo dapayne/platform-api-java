@@ -15,8 +15,8 @@ public class EventData  implements java.io.Serializable {
     private java.lang.Integer foreignID;
 
     private java.lang.String name;
-	
-	private java.lang.String description;
+
+    private java.lang.String description;
 
     private java.lang.Integer cameraID;
 
@@ -70,6 +70,8 @@ public class EventData  implements java.io.Serializable {
 
     private java.lang.Integer consentAgenda;
 
+    private java.lang.Integer[] views;
+
     public EventData() {
     }
 
@@ -78,7 +80,7 @@ public class EventData  implements java.io.Serializable {
            java.lang.String UID,
            java.lang.Integer foreignID,
            java.lang.String name,
-		   java.lang.String description,
+           java.lang.String description,
            java.lang.Integer cameraID,
            java.lang.Integer folderID,
            java.lang.String status,
@@ -103,13 +105,14 @@ public class EventData  implements java.io.Serializable {
            java.util.Calendar meetingTime,
            java.util.Calendar agendaPostedDate,
            java.util.Calendar nextStartDate,
+           java.lang.Integer[] views,
            java.lang.Integer agendaRolloverID,
            java.lang.Integer consentAgenda) {
            this.ID = ID;
            this.UID = UID;
            this.foreignID = foreignID;
            this.name = name;
-		   this.description = description;
+           this.description = description;
            this.cameraID = cameraID;
            this.folderID = folderID;
            this.status = status;
@@ -136,12 +139,13 @@ public class EventData  implements java.io.Serializable {
            this.nextStartDate = nextStartDate;
            this.agendaRolloverID = agendaRolloverID;
            this.consentAgenda = consentAgenda;
+           this.views = views;
     }
 
 
     /**
      * Gets the ID value for this EventData.
-     * 
+     *
      * @return ID
      */
     public java.lang.Integer getID() {
@@ -151,7 +155,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the ID value for this EventData.
-     * 
+     *
      * @param ID
      */
     public void setID(java.lang.Integer ID) {
@@ -161,7 +165,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the UID value for this EventData.
-     * 
+     *
      * @return UID
      */
     public java.lang.String getUID() {
@@ -171,7 +175,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the UID value for this EventData.
-     * 
+     *
      * @param UID
      */
     public void setUID(java.lang.String UID) {
@@ -181,7 +185,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the foreignID value for this EventData.
-     * 
+     *
      * @return foreignID
      */
     public java.lang.Integer getForeignID() {
@@ -191,7 +195,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the foreignID value for this EventData.
-     * 
+     *
      * @param foreignID
      */
     public void setForeignID(java.lang.Integer foreignID) {
@@ -201,7 +205,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the name value for this EventData.
-     * 
+     *
      * @return name
      */
     public java.lang.String getName() {
@@ -211,17 +215,17 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the name value for this EventData.
-     * 
+     *
      * @param name
      */
     public void setName(java.lang.String name) {
         this.name = name;
     }
-	
-	
+
+
     /**
      * Gets the description value for this EventData.
-     * 
+     *
      * @return description
      */
     public java.lang.String getDescription() {
@@ -230,9 +234,9 @@ public class EventData  implements java.io.Serializable {
 
 
     /**
-     * Sets the name value for this EventData.
-     * 
-     * @param name
+     * Sets the description value for this EventData.
+     *
+     * @param description
      */
     public void setDescription(java.lang.String description) {
         this.description = description;
@@ -241,7 +245,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the cameraID value for this EventData.
-     * 
+     *
      * @return cameraID
      */
     public java.lang.Integer getCameraID() {
@@ -251,7 +255,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the cameraID value for this EventData.
-     * 
+     *
      * @param cameraID
      */
     public void setCameraID(java.lang.Integer cameraID) {
@@ -261,7 +265,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the folderID value for this EventData.
-     * 
+     *
      * @return folderID
      */
     public java.lang.Integer getFolderID() {
@@ -271,7 +275,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the folderID value for this EventData.
-     * 
+     *
      * @param folderID
      */
     public void setFolderID(java.lang.Integer folderID) {
@@ -281,7 +285,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the status value for this EventData.
-     * 
+     *
      * @return status
      */
     public java.lang.String getStatus() {
@@ -291,7 +295,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the status value for this EventData.
-     * 
+     *
      * @param status
      */
     public void setStatus(java.lang.String status) {
@@ -301,7 +305,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the agendaType value for this EventData.
-     * 
+     *
      * @return agendaType
      */
     public java.lang.String getAgendaType() {
@@ -311,7 +315,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the agendaType value for this EventData.
-     * 
+     *
      * @param agendaType
      */
     public void setAgendaType(java.lang.String agendaType) {
@@ -321,7 +325,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the agendaFile value for this EventData.
-     * 
+     *
      * @return agendaFile
      */
     public java.lang.String getAgendaFile() {
@@ -331,7 +335,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the agendaFile value for this EventData.
-     * 
+     *
      * @param agendaFile
      */
     public void setAgendaFile(java.lang.String agendaFile) {
@@ -341,7 +345,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the playerTemplateID value for this EventData.
-     * 
+     *
      * @return playerTemplateID
      */
     public java.lang.Integer getPlayerTemplateID() {
@@ -351,7 +355,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the playerTemplateID value for this EventData.
-     * 
+     *
      * @param playerTemplateID
      */
     public void setPlayerTemplateID(java.lang.Integer playerTemplateID) {
@@ -361,7 +365,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the archiveStatus value for this EventData.
-     * 
+     *
      * @return archiveStatus
      */
     public java.lang.String getArchiveStatus() {
@@ -371,7 +375,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the archiveStatus value for this EventData.
-     * 
+     *
      * @param archiveStatus
      */
     public void setArchiveStatus(java.lang.String archiveStatus) {
@@ -381,7 +385,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the duration value for this EventData.
-     * 
+     *
      * @return duration
      */
     public java.lang.Integer getDuration() {
@@ -391,7 +395,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the duration value for this EventData.
-     * 
+     *
      * @param duration
      */
     public void setDuration(java.lang.Integer duration) {
@@ -401,7 +405,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the broadcast value for this EventData.
-     * 
+     *
      * @return broadcast
      */
     public java.lang.Boolean getBroadcast() {
@@ -411,7 +415,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the broadcast value for this EventData.
-     * 
+     *
      * @param broadcast
      */
     public void setBroadcast(java.lang.Boolean broadcast) {
@@ -421,7 +425,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the record value for this EventData.
-     * 
+     *
      * @return record
      */
     public java.lang.Boolean getRecord() {
@@ -431,7 +435,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the record value for this EventData.
-     * 
+     *
      * @param record
      */
     public void setRecord(java.lang.Boolean record) {
@@ -441,7 +445,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the autoStart value for this EventData.
-     * 
+     *
      * @return autoStart
      */
     public java.lang.Boolean getAutoStart() {
@@ -451,7 +455,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the autoStart value for this EventData.
-     * 
+     *
      * @param autoStart
      */
     public void setAutoStart(java.lang.Boolean autoStart) {
@@ -461,7 +465,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the startTime value for this EventData.
-     * 
+     *
      * @return startTime
      */
     public java.util.Calendar getStartTime() {
@@ -471,7 +475,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the startTime value for this EventData.
-     * 
+     *
      * @param startTime
      */
     public void setStartTime(java.util.Calendar startTime) {
@@ -481,7 +485,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the lastModified value for this EventData.
-     * 
+     *
      * @return lastModified
      */
     public java.util.Calendar getLastModified() {
@@ -491,7 +495,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the lastModified value for this EventData.
-     * 
+     *
      * @param lastModified
      */
     public void setLastModified(java.util.Calendar lastModified) {
@@ -501,7 +505,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the attendees value for this EventData.
-     * 
+     *
      * @return attendees
      */
     public com.granicus.xsd.Attendee[] getAttendees() {
@@ -511,7 +515,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the attendees value for this EventData.
-     * 
+     *
      * @param attendees
      */
     public void setAttendees(com.granicus.xsd.Attendee[] attendees) {
@@ -521,7 +525,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the motionTypes value for this EventData.
-     * 
+     *
      * @return motionTypes
      */
     public java.lang.String[] getMotionTypes() {
@@ -531,7 +535,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the motionTypes value for this EventData.
-     * 
+     *
      * @param motionTypes
      */
     public void setMotionTypes(java.lang.String[] motionTypes) {
@@ -541,7 +545,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the street1 value for this EventData.
-     * 
+     *
      * @return street1
      */
     public java.lang.String getStreet1() {
@@ -551,7 +555,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the street1 value for this EventData.
-     * 
+     *
      * @param street1
      */
     public void setStreet1(java.lang.String street1) {
@@ -561,7 +565,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the street2 value for this EventData.
-     * 
+     *
      * @return street2
      */
     public java.lang.String getStreet2() {
@@ -571,7 +575,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the street2 value for this EventData.
-     * 
+     *
      * @param street2
      */
     public void setStreet2(java.lang.String street2) {
@@ -581,7 +585,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the city value for this EventData.
-     * 
+     *
      * @return city
      */
     public java.lang.String getCity() {
@@ -591,7 +595,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the city value for this EventData.
-     * 
+     *
      * @param city
      */
     public void setCity(java.lang.String city) {
@@ -601,7 +605,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the state value for this EventData.
-     * 
+     *
      * @return state
      */
     public java.lang.String getState() {
@@ -611,7 +615,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the state value for this EventData.
-     * 
+     *
      * @param state
      */
     public void setState(java.lang.String state) {
@@ -621,7 +625,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the zip value for this EventData.
-     * 
+     *
      * @return zip
      */
     public java.lang.String getZip() {
@@ -631,7 +635,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the zip value for this EventData.
-     * 
+     *
      * @param zip
      */
     public void setZip(java.lang.String zip) {
@@ -641,7 +645,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the agendaTitle value for this EventData.
-     * 
+     *
      * @return agendaTitle
      */
     public java.lang.String getAgendaTitle() {
@@ -651,7 +655,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the agendaTitle value for this EventData.
-     * 
+     *
      * @param agendaTitle
      */
     public void setAgendaTitle(java.lang.String agendaTitle) {
@@ -661,7 +665,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the meetingTime value for this EventData.
-     * 
+     *
      * @return meetingTime
      */
     public java.util.Calendar getMeetingTime() {
@@ -671,7 +675,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the meetingTime value for this EventData.
-     * 
+     *
      * @param meetingTime
      */
     public void setMeetingTime(java.util.Calendar meetingTime) {
@@ -681,7 +685,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the agendaPostedDate value for this EventData.
-     * 
+     *
      * @return agendaPostedDate
      */
     public java.util.Calendar getAgendaPostedDate() {
@@ -691,7 +695,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the agendaPostedDate value for this EventData.
-     * 
+     *
      * @param agendaPostedDate
      */
     public void setAgendaPostedDate(java.util.Calendar agendaPostedDate) {
@@ -701,7 +705,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the nextStartDate value for this EventData.
-     * 
+     *
      * @return nextStartDate
      */
     public java.util.Calendar getNextStartDate() {
@@ -711,7 +715,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the nextStartDate value for this EventData.
-     * 
+     *
      * @param nextStartDate
      */
     public void setNextStartDate(java.util.Calendar nextStartDate) {
@@ -721,7 +725,7 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Gets the agendaRolloverID value for this EventData.
-     * 
+     *
      * @return agendaRolloverID
      */
     public java.lang.Integer getAgendaRolloverID() {
@@ -731,17 +735,33 @@ public class EventData  implements java.io.Serializable {
 
     /**
      * Sets the agendaRolloverID value for this EventData.
-     * 
+     *
      * @param agendaRolloverID
      */
     public void setAgendaRolloverID(java.lang.Integer agendaRolloverID) {
         this.agendaRolloverID = agendaRolloverID;
     }
 
+    /**
+     * Sets the consentAgenda value for this EventData.
+     *
+     * @param consentAgenda
+     */
+    public void setConsentAgenda(java.lang.Integer consentAgenda) {
+        this.consentAgenda = consentAgenda;
+    }
+
 
     /**
-     * Gets the consentAgenda value for this EventData.
-     * 
+     * Gets the views value for this EventData.
+     *
+     * @return views
+     */
+    public  java.lang.Integer[] getViews() {
+        return views;
+    }
+    /**
+     *
      * @return consentAgenda
      */
     public java.lang.Integer getConsentAgenda() {
@@ -750,13 +770,18 @@ public class EventData  implements java.io.Serializable {
 
 
     /**
+     * Sets the views value for this EventData.
+     *
+     * @param views
+     */
+    public void setViews(java.lang.Integer[] views) {
+        this.views = views;
+      }
+    /*
      * Sets the consentAgenda value for this EventData.
-     * 
+     *
      * @param consentAgenda
      */
-    public void setConsentAgenda(java.lang.Integer consentAgenda) {
-        this.consentAgenda = consentAgenda;
-    }
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
@@ -769,98 +794,98 @@ public class EventData  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.ID==null && other.getID()==null) || 
+        _equals = true &&
+            ((this.ID==null && other.getID()==null) ||
              (this.ID!=null &&
               this.ID.equals(other.getID()))) &&
-            ((this.UID==null && other.getUID()==null) || 
+            ((this.UID==null && other.getUID()==null) ||
              (this.UID!=null &&
               this.UID.equals(other.getUID()))) &&
-            ((this.foreignID==null && other.getForeignID()==null) || 
+            ((this.foreignID==null && other.getForeignID()==null) ||
              (this.foreignID!=null &&
               this.foreignID.equals(other.getForeignID()))) &&
-            ((this.name==null && other.getName()==null) || 
+            ((this.name==null && other.getName()==null) ||
              (this.name!=null &&
               this.name.equals(other.getName()))) &&
-			((this.description==null && other.getDescription()==null) || 
-			 (this.description!=null &&
-			  this.description.equals(other.getDescription()))) &&
-            ((this.cameraID==null && other.getCameraID()==null) || 
+            ((this.cameraID==null && other.getCameraID()==null) ||
              (this.cameraID!=null &&
               this.cameraID.equals(other.getCameraID()))) &&
-            ((this.folderID==null && other.getFolderID()==null) || 
+            ((this.folderID==null && other.getFolderID()==null) ||
              (this.folderID!=null &&
               this.folderID.equals(other.getFolderID()))) &&
-            ((this.status==null && other.getStatus()==null) || 
+            ((this.status==null && other.getStatus()==null) ||
              (this.status!=null &&
               this.status.equals(other.getStatus()))) &&
-            ((this.agendaType==null && other.getAgendaType()==null) || 
+            ((this.agendaType==null && other.getAgendaType()==null) ||
              (this.agendaType!=null &&
               this.agendaType.equals(other.getAgendaType()))) &&
-            ((this.agendaFile==null && other.getAgendaFile()==null) || 
+            ((this.agendaFile==null && other.getAgendaFile()==null) ||
              (this.agendaFile!=null &&
               this.agendaFile.equals(other.getAgendaFile()))) &&
-            ((this.playerTemplateID==null && other.getPlayerTemplateID()==null) || 
+            ((this.playerTemplateID==null && other.getPlayerTemplateID()==null) ||
              (this.playerTemplateID!=null &&
               this.playerTemplateID.equals(other.getPlayerTemplateID()))) &&
-            ((this.archiveStatus==null && other.getArchiveStatus()==null) || 
+            ((this.archiveStatus==null && other.getArchiveStatus()==null) ||
              (this.archiveStatus!=null &&
               this.archiveStatus.equals(other.getArchiveStatus()))) &&
-            ((this.duration==null && other.getDuration()==null) || 
+            ((this.duration==null && other.getDuration()==null) ||
              (this.duration!=null &&
               this.duration.equals(other.getDuration()))) &&
-            ((this.broadcast==null && other.getBroadcast()==null) || 
+            ((this.broadcast==null && other.getBroadcast()==null) ||
              (this.broadcast!=null &&
               this.broadcast.equals(other.getBroadcast()))) &&
-            ((this.record==null && other.getRecord()==null) || 
+            ((this.record==null && other.getRecord()==null) ||
              (this.record!=null &&
               this.record.equals(other.getRecord()))) &&
-            ((this.autoStart==null && other.getAutoStart()==null) || 
+            ((this.autoStart==null && other.getAutoStart()==null) ||
              (this.autoStart!=null &&
               this.autoStart.equals(other.getAutoStart()))) &&
-            ((this.startTime==null && other.getStartTime()==null) || 
+            ((this.startTime==null && other.getStartTime()==null) ||
              (this.startTime!=null &&
               this.startTime.equals(other.getStartTime()))) &&
-            ((this.lastModified==null && other.getLastModified()==null) || 
+            ((this.lastModified==null && other.getLastModified()==null) ||
              (this.lastModified!=null &&
               this.lastModified.equals(other.getLastModified()))) &&
-            ((this.attendees==null && other.getAttendees()==null) || 
+            ((this.attendees==null && other.getAttendees()==null) ||
              (this.attendees!=null &&
               java.util.Arrays.equals(this.attendees, other.getAttendees()))) &&
-            ((this.motionTypes==null && other.getMotionTypes()==null) || 
+            ((this.motionTypes==null && other.getMotionTypes()==null) ||
              (this.motionTypes!=null &&
               java.util.Arrays.equals(this.motionTypes, other.getMotionTypes()))) &&
-            ((this.street1==null && other.getStreet1()==null) || 
+            ((this.street1==null && other.getStreet1()==null) ||
              (this.street1!=null &&
               this.street1.equals(other.getStreet1()))) &&
-            ((this.street2==null && other.getStreet2()==null) || 
+            ((this.street2==null && other.getStreet2()==null) ||
              (this.street2!=null &&
               this.street2.equals(other.getStreet2()))) &&
-            ((this.city==null && other.getCity()==null) || 
+            ((this.city==null && other.getCity()==null) ||
              (this.city!=null &&
               this.city.equals(other.getCity()))) &&
-            ((this.state==null && other.getState()==null) || 
+            ((this.state==null && other.getState()==null) ||
              (this.state!=null &&
               this.state.equals(other.getState()))) &&
-            ((this.zip==null && other.getZip()==null) || 
+            ((this.zip==null && other.getZip()==null) ||
              (this.zip!=null &&
               this.zip.equals(other.getZip()))) &&
-            ((this.agendaTitle==null && other.getAgendaTitle()==null) || 
+            ((this.agendaTitle==null && other.getAgendaTitle()==null) ||
              (this.agendaTitle!=null &&
               this.agendaTitle.equals(other.getAgendaTitle()))) &&
-            ((this.meetingTime==null && other.getMeetingTime()==null) || 
+            ((this.meetingTime==null && other.getMeetingTime()==null) ||
              (this.meetingTime!=null &&
               this.meetingTime.equals(other.getMeetingTime()))) &&
-            ((this.agendaPostedDate==null && other.getAgendaPostedDate()==null) || 
+            ((this.agendaPostedDate==null && other.getAgendaPostedDate()==null) ||
              (this.agendaPostedDate!=null &&
               this.agendaPostedDate.equals(other.getAgendaPostedDate()))) &&
-            ((this.nextStartDate==null && other.getNextStartDate()==null) || 
+            ((this.nextStartDate==null && other.getNextStartDate()==null) ||
              (this.nextStartDate!=null &&
               this.nextStartDate.equals(other.getNextStartDate()))) &&
-            ((this.agendaRolloverID==null && other.getAgendaRolloverID()==null) || 
+            ((this.views==null && other.getViews()==null) ||
+             (this.views!=null &&
+              java.util.Arrays.equals(this.views, other.getViews()))) &&
+            ((this.agendaRolloverID==null && other.getAgendaRolloverID()==null) ||
              (this.agendaRolloverID!=null &&
               this.agendaRolloverID.equals(other.getAgendaRolloverID()))) &&
-            ((this.consentAgenda==null && other.getConsentAgenda()==null) || 
+            ((this.consentAgenda==null && other.getConsentAgenda()==null) ||
              (this.consentAgenda!=null &&
               this.consentAgenda.equals(other.getConsentAgenda())));
         __equalsCalc = null;
@@ -874,8 +899,8 @@ public class EventData  implements java.io.Serializable {
         }
         __hashCodeCalc = true;
         int _hashCode = 1;
-        if (getID() != null) {
-            _hashCode += getID().hashCode();
+        if (getUID() != null) {
+          _hashCode += getID().hashCode();
         }
         if (getUID() != null) {
             _hashCode += getUID().hashCode();
@@ -885,6 +910,9 @@ public class EventData  implements java.io.Serializable {
         }
         if (getName() != null) {
             _hashCode += getName().hashCode();
+        }
+        if (getDescription() != null) {
+            _hashCode += getDescription().hashCode();
         }
         if (getCameraID() != null) {
             _hashCode += getCameraID().hashCode();
@@ -974,12 +1002,24 @@ public class EventData  implements java.io.Serializable {
         if (getNextStartDate() != null) {
             _hashCode += getNextStartDate().hashCode();
         }
+        if (getConsentAgenda() != null) {
+              _hashCode += getConsentAgenda().hashCode();
+        }
         if (getAgendaRolloverID() != null) {
             _hashCode += getAgendaRolloverID().hashCode();
         }
-        if (getConsentAgenda() != null) {
-            _hashCode += getConsentAgenda().hashCode();
-        }
+        if (getViews() != null) {
+            for (int i=0;
+                 i<java.lang.reflect.Array.getLength(getViews());
+                 i++) {
+                java.lang.Object obj = java.lang.reflect.Array.get(getViews(), i);
+                if (obj != null &&
+                    !obj.getClass().isArray()) {
+                    _hashCode += obj.hashCode();
+                }
+            }
+          }
+
         __hashCodeCalc = false;
         return _hashCode;
     }
@@ -1203,6 +1243,13 @@ public class EventData  implements java.io.Serializable {
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("consentAgenda");
         elemField.setXmlName(new javax.xml.namespace.QName("", "ConsentAgenda"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("views");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "Views"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
@@ -1220,10 +1267,10 @@ public class EventData  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           java.lang.String mechType,
+           java.lang.Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -1232,10 +1279,10 @@ public class EventData  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           java.lang.String mechType,
+           java.lang.Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

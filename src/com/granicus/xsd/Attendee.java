@@ -41,7 +41,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Gets the ID value for this Attendee.
-     * 
+     *
      * @return ID
      */
     public java.lang.Integer getID() {
@@ -51,7 +51,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Sets the ID value for this Attendee.
-     * 
+     *
      * @param ID
      */
     public void setID(java.lang.Integer ID) {
@@ -61,7 +61,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Gets the name value for this Attendee.
-     * 
+     *
      * @return name
      */
     public java.lang.String getName() {
@@ -71,7 +71,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Sets the name value for this Attendee.
-     * 
+     *
      * @param name
      */
     public void setName(java.lang.String name) {
@@ -81,7 +81,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Gets the orderID value for this Attendee.
-     * 
+     *
      * @return orderID
      */
     public java.lang.Integer getOrderID() {
@@ -91,7 +91,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Sets the orderID value for this Attendee.
-     * 
+     *
      * @param orderID
      */
     public void setOrderID(java.lang.Integer orderID) {
@@ -101,7 +101,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Gets the voting value for this Attendee.
-     * 
+     *
      * @return voting
      */
     public java.lang.Boolean getVoting() {
@@ -111,7 +111,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Sets the voting value for this Attendee.
-     * 
+     *
      * @param voting
      */
     public void setVoting(java.lang.Boolean voting) {
@@ -121,7 +121,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Gets the chair value for this Attendee.
-     * 
+     *
      * @return chair
      */
     public java.lang.Boolean getChair() {
@@ -131,7 +131,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Sets the chair value for this Attendee.
-     * 
+     *
      * @param chair
      */
     public void setChair(java.lang.Boolean chair) {
@@ -141,7 +141,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Gets the personUID value for this Attendee.
-     * 
+     *
      * @return personUID
      */
     public java.lang.String getPersonUID() {
@@ -151,7 +151,7 @@ public class Attendee  implements java.io.Serializable {
 
     /**
      * Sets the personUID value for this Attendee.
-     * 
+     *
      * @param personUID
      */
     public void setPersonUID(java.lang.String personUID) {
@@ -169,23 +169,23 @@ public class Attendee  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.ID==null && other.getID()==null) || 
+        _equals = true &&
+            ((this.ID==null && other.getID()==null) ||
              (this.ID!=null &&
               this.ID.equals(other.getID()))) &&
-            ((this.name==null && other.getName()==null) || 
+            ((this.name==null && other.getName()==null) ||
              (this.name!=null &&
               this.name.equals(other.getName()))) &&
-            ((this.orderID==null && other.getOrderID()==null) || 
+            ((this.orderID==null && other.getOrderID()==null) ||
              (this.orderID!=null &&
               this.orderID.equals(other.getOrderID()))) &&
-            ((this.voting==null && other.getVoting()==null) || 
+            ((this.voting==null && other.getVoting()==null) ||
              (this.voting!=null &&
               this.voting.equals(other.getVoting()))) &&
-            ((this.chair==null && other.getChair()==null) || 
+            ((this.chair==null && other.getChair()==null) ||
              (this.chair!=null &&
               this.chair.equals(other.getChair()))) &&
-            ((this.personUID==null && other.getPersonUID()==null) || 
+            ((this.personUID==null && other.getPersonUID()==null) ||
              (this.personUID!=null &&
               this.personUID.equals(other.getPersonUID())));
         __equalsCalc = null;
@@ -269,6 +269,13 @@ public class Attendee  implements java.io.Serializable {
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("personUID");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "PersonUID"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
     }
 
     /**
@@ -282,10 +289,10 @@ public class Attendee  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           java.lang.String mechType,
+           java.lang.Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -294,10 +301,10 @@ public class Attendee  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           java.lang.String mechType,
+           java.lang.Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }
